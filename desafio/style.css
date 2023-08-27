@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+.rain {
+  --bg-color: hsl(0, 0%, 100%);
+  --text-color: hsl(240, 6%, 21%);
+  --btn1: hsla(240, 9%, 89%, 1);
+  --btn2: hsla(194, 97%, 31%, 1);
+  --controls-color: hsl(240, 6%, 21%);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+
+#app {
+  display: flex;
+  align-items: center;
+  gap: 19.2rem;
+}
+
+#timer {
+  font-size: 12.6rem;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+}
+
+#controls {
+  margin-top: 1.7rem;
+  text-align: center;
+}
+
+#controls button {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: 0;
+  cursor: pointer;
+  font-size: 6rem;
+  color: var(--controls-color);
+}
+
+
+
+#modes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+#modes button {
+  background: var(--btn1);
+  padding: 5rem;
+  font-size: 6rem;
+  border: 0;
+  border-radius: 4rem;
+  cursor: pointer;
+  transition: transform .2s;
+}
+
+#modes button:hover {
+  transform: scale(1.1);
+}
+
+#modes .secondary {
+  color: var(--bg-color);
+  background: var(--btn2);
+}
+
+.florest {
+  --bg-color: hsla(177, 100%, 50%, 0.308);
+  --text-color: hsl(29, 43%, 23%);
+  --btn1: rgb(151, 202, 198);
+  --btn2: rgb(68, 177, 168);
+  --controls-color: hsl(0, 20%, 36%);
+}
+
+.coffe {
+  --bg-color: hsl(39, 100%, 17%);
+  --text-color: hsl(0, 0%, 100%);
+  --btn1: rgba(97, 114, 34, 0.842);
+  --btn2: rgba(95, 150, 81, 0.747);
+  --controls-color: hsl(0, 0%, 100%);
+}
+
+.fire {
+  --bg-color: hsl(24, 59%, 50%);
+  --text-color: hsl(0, 54%, 90%);
+  --btn1: rgb(230, 137, 51);
+  --btn2: rgb(212, 152, 83);
+  --controls-color: hsl(41, 100%, 75%);
+}
+
+.running .ph-play-circle,
+html:not(.running) .ph-pause-circle {
+  display: none
+}

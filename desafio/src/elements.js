@@ -1,0 +1,6 @@
+export const modes = document.getElementById('modes')
+export const florest = document.getElementById('tree')
+export const rain = document.getElementById('rain')
+export const controls = document.getElementById('controls')
+export const minutes = document.getElementById('minutes')
+export const seconds = document.getElementById('seconds')
